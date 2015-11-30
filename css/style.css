@@ -38,7 +38,7 @@ float:left;
 
 #logo
 {
-width:auto; float:left; margin-right:auto; margin-left:auto;
+width:80%; float:center; margin-right:auto; margin-left:auto;
 }
 
 #signup
@@ -325,7 +325,7 @@ body{overflow-x:hidden;}
 #media1024 {display:block; margin-left:auto; margin-right:auto; width:100%; height:auto; float:none;}
 
 #fblogo img{float:left;}
-#logo img{clear:both; display:block; margin-right:auto; margin-left:auto; width:auto; float:none;}
+#logo img{clear:both; display:block; margin-right:auto; margin-left:auto; width:80%; float:none;}
 #signup img{clear:both;display:block; margin-right:auto; margin-left:auto; width:auto;float:none; margin-top:10px;}
 
 #left{float:left; width:45%; height:auto; display:block; margin-left:5%; margin-right:auto; }
@@ -517,11 +517,13 @@ background-repeat:no-repeat;}
 */
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 480px) {
+	  #logo { width: 80%; }
     .row div a img { width:100%;}
     .row div img { width:50%; }
     .footer div { font-size:300%; }
     .row p { font-size:300%; }
-		.btn { font-size: 300%; }
+		.btn { font-size: 100%; }
+		.col-lg-4 h4 { font-size: 300%; }
     .cycle-slideshow { width: 320px;}
     .cycle-overlay { padding: 4px }
     .cycle-caption { bottom: 4px; right: 4px }
