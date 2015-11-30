@@ -9,9 +9,12 @@ Tags: 			karaoke,theme, naked, clean, basic
 */
 
 
-body
+head,body
 {
 background-color: #000;
+background-image: images/background-new.png;
+background-repeat:no-repeat;
+background-size:cover;
 height:100%;
 width:100%;
 text-decoration:none;
@@ -25,60 +28,43 @@ position:relative;
 width:100%;
 }
 
-#logo img
-{margin-left:32%; margin-right:32%; width:35%; min-width:300px; height:auto;}
+/* image headers */
+#fblogo
+{
+clear:both;
+margin-left:10%; width:25%; margin-top:2%; margin-right:0;
+float:left;
+}
+
+#logo
+{
+width:auto; float:left; margin-right:auto; margin-left:auto;
+}
+
+#signup
+{
+width:25%; margin-top:2%; margin-left:10%; float:left;
+}
+
+
 
 html, body, header, footer
 { margin: 0; min-width:300px;}
 
-#nav
-{
-background-image:url('images/navigation-background.png');
-background-repeat:no-repeat;
-background-position: 100% .4em;
-height:50px;
-width:100%;
-max-width: 1680px;
-}
-
-#nav ul
-{
-overflow: auto;
-padding: 0;
-font-size: 16px;
-float:left;
-margin-left:30%;
-text-decoration:none;
-position:relative;
-bottom: 15px;
-}
-
-#nav ul li
-{
-padding-right: 3.125em;
-margin: 1em 0;
-float:left;
-}
-
-#nav ul li a
-{
-text-decoration:none;
+.footer div {
 color:#cab687;
-font-family:Myriad Pro;
-font-size:16px;
 }
-
 
 #middle
 {width:100%; height:auto; min-width:300px;}
 
-#belowmiddle {width:100%; height:auto; min-width:300px; margin-top: 0px;}
+#belowmiddle {width:100%; height:auto; min-width:300px; margin-top: 20px;}
 
 #left
 {
 margin-top: 50px;
 float:left;
-padding-left:5%;
+margin-left:10%;
 width:25%;}
 
 #centermid
@@ -92,15 +78,14 @@ width:25%;}
 {
 margin-top: 50px;
 float:left;
-padding-left:5%;
-width:35%;}
-
+margin-left:20%;
+width:30%;}
 
 #right
 {
 margin-top: 50px;
 float:left;
-padding-left:5%;
+margin-left:5%;
 width:25%;}
 
 
@@ -154,7 +139,7 @@ float:left;
 width:25%;
 height:auto;
 min-width:240px;
-margin-left:5%;
+margin-left:10%;
 }
 
 #lastcenter
@@ -185,26 +170,167 @@ text-align:center;
 }
 
 #footer {
+padding-top:20px;
 padding-bottom:20px;
 }
 
-p,ul
+p
 {
-font-family:"Myriad Pro", Myriad,"Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size:16px;
-color:#ffffff;
-text-align:left;
+font-family:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:15px;
+text-decoration:none;
+color:#cab687;
 }
 
 p a
 {text-decoration:none;color:#cab687;}
 
+h2
+{
+font-family:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-decoration:none;
+color:#cab687;
+text-align:center;
+}
+
+/*NAVIGATION PROPERTIES*/
+#menu {
+	width: 100%;
+	margin-top: 0px;
+	text-align: center;
+	background-color: #000000;
+	float: left;
+	display:block;
+	text-transform: uppercase;
+}
+
+#menu ul li {
+
+font-size: 16px;
+float:left;
+margin-left:10%;
+text-decoration:none;
+bottom: 15px;
+}
+
+#menu ul li a {
+	line-height: 50px;
+	padding-left: 5px;
+	color: white;
+	text-decoration: none;
+	background-color: #000000;
+	color:#cab687;
+font-family:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:16px;
+}
+/*
+#menu
+{
+clear:both;
+background-image:url('images/navigation-background.png');
+background-repeat:no-repeat;
+background-position: 100% .4em;
+height:50px;
+width:100%;
+max-width: 1680px;
+display: block;
+}
+
+#menu ul
+{
+font-size: 16px;
+float:left;
+margin-left:25%;
+text-decoration:none;
+bottom: 15px;
+}
+
+#menu ul li
+{
+padding-right: 3.125em;
+margin: 1em 0;
+float:left;
+display: inline-block;
+list-style: none;
+}
+
+#menu ul li a
+{
+text-decoration:none;
+color:#cab687;
+font-family:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:16px;
+}
+*/
+
+/*Menu icon properties*/
+a.menu-link {
+	float: right;
+	display: block;
+	opacity: .9;
+	margin-top: 8px; /*Menu icon Margin from top*/
+	margin-left: 6px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: #000000;
+		}
+
+		nav[role=navigation] {
+			clear: both;
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+		}
+		.js nav[role=navigation] {
+			overflow: hidden;
+			max-height: 0;
+		}
+		nav[role=navigation].active {
+			max-height: 15em;
+		}
+		nav[role=navigation] ul {
+			margin-top: -5px;
+		}
+		nav[role=navigation] li a {
+	display: inline;
+		}
+
+		@media screen and (min-width: 48.25em) {
+			a.menu-link {
+			   display: none;
+			}
+			.js nav[role=navigation] {
+				max-height: none;
+			}
+			nav[role=navigation] ul {
+				margin: 0 0 0 -0.25em;
+				border: 0;
+			}
+
+			nav[role=navigation]  li {
+				display: inline-block;
+				margin: 0 0.25em;
+			}
+			nav[role=navigation] li a {
+				border: 0;
+			}
+		}
+
 @media only screen and (max-width : 1024px)
 {
 body{overflow-x:hidden;}
 #media1024 {display:block; margin-left:auto; margin-right:auto; width:100%; height:auto; float:none;}
-#left{float:left; width:45%; height:auto; display:block; margin-left:auto; margin-right:auto; }
+
+#fblogo img{float:left;}
+#logo img{clear:both; display:block; margin-right:auto; margin-left:auto; width:auto; float:none;}
+#signup img{clear:both;display:block; margin-right:auto; margin-left:auto; width:auto;float:none; margin-top:10px;}
+
+#left{float:left; width:45%; height:auto; display:block; margin-left:5%; margin-right:auto; }
 #centermid {float:left; padding-left:5%; width:45%; height:auto; display:block; margin-left:auto; margin-right:auto;}
+#centerm {float:left; padding-left:5%; width:40%; height:auto; display:block; margin-left:auto; margin-right:auto;}
 #right{clear:both; width:70%; float:none; display:block; margin-left:auto; margin-right:auto; margin-top:50px;}
 
 #left img {height:auto; width:100%; display:block; margin-left:auto; margin-right:auto;}
@@ -212,12 +338,8 @@ body{overflow-x:hidden;}
 #right img {height:auto; width:80%; display:block; margin-left:auto; margin-right:auto; margin-top: 20px;}
 
 img{max-width:100%; height:auto; margin:0;}
-#nav ul li {width:auto; background-image:url('images/navigation-background.png');
-background-repeat:no-repeat;
-padding-right: 2.125em;float:left; display:block; margin-left:auto; margin-right:auto;
-}
-#nav ul li a {font-size:12px;}
-#nav ul {margin-left:20%;}
+#nav ul li {width:25%; background-image:url('images/navigation-background.png');
+background-repeat:no-repeat;}
 
 #membership{float:left; width:45%; height:auto; display:block; margin-left:5%; margin-right:auto; }
 #lastcenter {float:left; padding-left:5%; width:45%; height:auto; display:block; margin-left:auto; margin-right:auto;}
@@ -228,6 +350,27 @@ padding-right: 2.125em;float:left; display:block; margin-left:auto; margin-right
 #footer{width:auto;text-align:center;}
 }
 
+@media screen and (max-width: 768px) {
+
+	#menu {
+	width: 100%;
+	margin: 2px auto -5px;
+	text-align: center;
+	background-color: #000000;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+	#menu ul li {
+	list-style: none;
+	display: inline;
+}
+	#menu ul li a {
+	background: rgba(0,0,0,.3);
+	margin-top: 5px;
+	display: inline;
+}
+}
 
 @media only screen and (max-width : 480px)
 {
@@ -239,13 +382,15 @@ width:100%;
 text-decoration:none;
 overflow-x:hidden;
 }
-#logo img{clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
-#fblogo img{clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
+#fblogo img{ display:none;}
+#logo img { clear:both;width:auto; float:none;block:display; margin-left:auto; margin-right:auto;}
+#signup img{ clear:both;width:auto; float:left;block:display; margin-left:auto; margin-right:auto;}
 #trip img {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
 #callus img {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
 
 #left{display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
 #centermid {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
+#centerm {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
 #right{display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
 
 #left img {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%;}
@@ -253,12 +398,10 @@ overflow-x:hidden;
 #right img {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%;}
 
 img{max-width:100%; height:auto; margin:0;}
+#imagemember {display:none;}
 
-#nav ul li a {font-size:10px;}
-#nav ul li {width:auto; background-image:url('images/navigation-background.png');
-background-repeat:no-repeat; padding-right: 0.5em;display:block; margin-left:auto; margin-right:auto;
-}
-#nav ul {margin-left:5%;}
+#nav ul li {width:50%; font-size:85%; background-image:url('images/navigation-background.png');
+background-repeat:no-repeat;}
 
 .cycle-slideshow {display:none;}
 
@@ -267,6 +410,29 @@ background-repeat:no-repeat; padding-right: 0.5em;display:block; margin-left:aut
 #lastcenter{clear:both;float:none; display:block; margin-right:auto; margin-left:auto; margin-top:20px; width:auto;}
 #lastright {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; margin-top:20px; width:auto;}
 #footer{clear:both;float:none; width:auto;margin-top:10px;}
+
+
+	#menu {
+	background-color: rgba(255,255,255,0.3); margin-bottom: 10px;
+}
+	#menu ul li {
+	width: 100%;
+	display: block;
+	border-bottom: 1px dotted #FFF;
+	float: none;
+	background-color: #000000;
+	}
+	#menu ul li a {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	padding: 0;
+	float: none;
+	background-color: rgba(102,102,102,0.3);
+	}
+	#menu li:hover, #menu a:active {
+	background-color: rgba(0,204,255,0.3);
+}
 }
 
 
@@ -351,6 +517,10 @@ background-repeat:no-repeat; padding-right: 0.5em;display:block; margin-left:aut
 */
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 480px) {
+    .row div a img { width:100%;}
+    .row div img { width:50%; }
+    .footer div { font-size:300%; }
+    .row p { font-size:300%; }
     .cycle-slideshow { width: 320px;}
     .cycle-overlay { padding: 4px }
     .cycle-caption { bottom: 4px; right: 4px }
