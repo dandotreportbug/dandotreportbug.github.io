@@ -1,0 +1,357 @@
+/*
+Theme Name: 	Restaurant
+Theme URI: 		http://wonderfulkitchen.co.uk/
+Description: 	Theme for Wonderful Kitchen Restaurant
+Version: 		1.0
+Author: 		Kristine Mae E. Galera
+Author URI: 	https://www.facebook.com/kristineesca
+Tags: 			karaoke,theme, naked, clean, basic
+*/
+
+
+body
+{
+background-color: #0000000;
+height:100%;
+width:100%;
+text-decoration:none;
+overflow-x:hidden;
+}
+
+#wrap
+{
+min-width:300px;
+position:relative;
+width:100%;
+}
+
+#logo img
+{margin-left:32%; margin-right:32%; width:35%; min-width:300px; height:auto;}
+
+html, body, header, footer
+{ margin: 0; min-width:300px;}
+
+#nav
+{
+background-image:url('images/navigation-background.png');
+background-repeat:no-repeat;
+background-position: 100% .4em;
+height:50px;
+width:100%;
+max-width: 1680px;
+}
+
+#nav ul
+{
+overflow: auto;
+padding: 0;
+font-size: 16px;
+float:left;
+margin-left:30%;
+text-decoration:none;
+position:relative;
+bottom: 15px;
+}
+
+#nav ul li
+{
+padding-right: 3.125em;
+margin: 1em 0;
+float:left;
+}
+
+#nav ul li a
+{
+text-decoration:none;
+color:#cab687;
+font-family:Myriad Pro;
+font-size:16px;
+}
+
+
+#middle
+{width:100%; height:auto; min-width:300px;}
+
+#belowmiddle {width:100%; height:auto; min-width:300px; margin-top: 0px;}
+
+#left
+{
+margin-top: 50px;
+float:left;
+padding-left:5%;
+width:25%;}
+
+#centermid
+{
+margin-top: 50px;
+float:left;
+padding-left:5%;
+width:25%;}
+
+#centerm
+{
+margin-top: 50px;
+float:left;
+padding-left:5%;
+width:35%;}
+
+
+#right
+{
+margin-top: 50px;
+float:left;
+padding-left:5%;
+width:25%;}
+
+
+#rightline img
+{
+float:left;
+left: 10px;
+top: 0px;
+padding-bottom:10px;
+float:left;
+width:30%;
+height:auto;
+min-width:300px;
+}
+
+#centerline img
+{position: relative;
+left: 10px;
+top: 0px;
+padding-bottom:10px;
+float:left;
+width:30%;
+height:auto;
+min-width:300px;
+}
+
+#leftline img
+{position: relative;
+left: 10px;
+top: 0px;
+padding-bottom:10px;
+float:left;
+width:30%;
+height:auto;
+min-width:300px;
+}
+
+#largeline img
+{
+width:100%;
+height:auto;
+min-width:300px;
+margin-top:20px;
+}
+
+
+#last p{text-align:left;}
+#membership img
+{
+float:left;
+width:25%;
+height:auto;
+min-width:240px;
+margin-left:5%;
+}
+
+#lastcenter
+{
+margin-left: 50px;
+float:left;
+width:25%;
+}
+
+#lastright
+{
+float:left;
+width:25%;
+margin-left: 50px;
+}
+
+#lastright img
+{
+float:left;
+position: relative;
+left: 120px;
+bottom: 35px;
+}
+
+
+#footer p{
+text-align:center;
+}
+
+#footer {
+padding-bottom:20px;
+}
+
+p,ul
+{
+font-family:"Myriad Pro", Myriad,"Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:16px;
+color:#ffffff;
+text-align:left;
+}
+
+p a
+{text-decoration:none;color:#cab687;}
+
+@media only screen and (max-width : 1024px)
+{
+body{overflow-x:hidden;}
+#media1024 {display:block; margin-left:auto; margin-right:auto; width:100%; height:auto; float:none;}
+#left{float:left; width:45%; height:auto; display:block; margin-left:auto; margin-right:auto; }
+#centermid {float:left; padding-left:5%; width:45%; height:auto; display:block; margin-left:auto; margin-right:auto;}
+#right{clear:both; width:70%; float:none; display:block; margin-left:auto; margin-right:auto; margin-top:50px;}
+
+#left img {height:auto; width:100%; display:block; margin-left:auto; margin-right:auto;}
+#centermid img {height:auto; width:100%; display:block; margin-left:auto; margin-right:auto;}
+#right img {height:auto; width:80%; display:block; margin-left:auto; margin-right:auto; margin-top: 20px;}
+
+img{max-width:100%; height:auto; margin:0;}
+#nav ul li {width:auto; background-image:url('images/navigation-background.png');
+background-repeat:no-repeat;
+padding-right: 2.125em;float:left; display:block; margin-left:auto; margin-right:auto;
+}
+#nav ul li a {font-size:12px;}
+#nav ul {margin-left:20%;}
+
+#membership{float:left; width:45%; height:auto; display:block; margin-left:5%; margin-right:auto; }
+#lastcenter {float:left; padding-left:5%; width:45%; height:auto; display:block; margin-left:auto; margin-right:auto;}
+#lastright{clear:both; width:70%; float:none; display:block; margin-left:auto; margin-right:auto; margin-top:20px;}
+
+#membership img {height:auto; width:80%; display:block; margin-left:auto; margin-right:auto;}
+
+#footer{width:auto;text-align:center;}
+}
+
+
+@media only screen and (max-width : 480px)
+{
+body
+{
+background-color: #0000000;
+height:100%;
+width:100%;
+text-decoration:none;
+overflow-x:hidden;
+}
+#logo img{clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
+#fblogo img{clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
+#trip img {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
+#callus img {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
+
+#left{display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
+#centermid {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
+#right{display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%; margin-top:20px;}
+
+#left img {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%;}
+#centermid img {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%;}
+#right img {display:block; margin-right:auto; margin-left:auto; float:none; height:auto; width:100%;}
+
+img{max-width:100%; height:auto; margin:0;}
+
+#nav ul li a {font-size:10px;}
+#nav ul li {width:auto; background-image:url('images/navigation-background.png');
+background-repeat:no-repeat; padding-right: 0.5em;display:block; margin-left:auto; margin-right:auto;
+}
+#nav ul {margin-left:5%;}
+
+.cycle-slideshow {display:none;}
+
+#membership{clear:both; float:none; display:block; margin-right:auto; margin-left:auto; margin-top:20px;width:auto;}
+#membership img {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; width:auto;}
+#lastcenter{clear:both;float:none; display:block; margin-right:auto; margin-left:auto; margin-top:20px; width:auto;}
+#lastright {clear:both;float:none; display:block; margin-right:auto; margin-left:auto; margin-top:20px; width:auto;}
+#footer{clear:both;float:none; width:auto;margin-top:10px;}
+}
+
+
+
+
+/*
+    these are just the default styles used in the Cycle2 demo pages.
+    you can use these styles or any others that you wish.
+*/
+
+
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.cycle-slideshow { width: 100%; min-width: 320px; margin:0; padding: 0; float:left;
+
+ }
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img {
+    /*
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+     width: 100%; padding: 0; margin:0; display: block; float:left;
+}
+
+/* in case script does not load */
+
+/* pager */
+.cycle-pager {
+    text-align: center; width: 100%; z-index: 500; position: absolute; bottom: 50px; overflow: visible;
+}
+.cycle-pager span {
+	font-family: arial;
+	font-size: 50px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	color: rgba(0,204,255,0.3);
+	cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active {
+	color: rgba(255,255,255,0.5);
+}
+.cycle-pager > * { cursor: pointer;}
+
+
+/* caption */
+.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.cycle-overlay {
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background:url(../images/leftArrow.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background:url(../images/rightArrow.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}
+
+/*
+    media queries
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 480px) {
+    .cycle-slideshow { width: 320px;}
+    .cycle-overlay { padding: 4px }
+    .cycle-caption { bottom: 4px; right: 4px }
+}
