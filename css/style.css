@@ -521,6 +521,7 @@ background-repeat:no-repeat;}
     .row div img { width:50%; }
     .footer div { font-size:300%; }
     .row p { font-size:300%; }
+		.btn { font-size: 300%; }
     .cycle-slideshow { width: 320px;}
     .cycle-overlay { padding: 4px }
     .cycle-caption { bottom: 4px; right: 4px }
